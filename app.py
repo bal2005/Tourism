@@ -10,8 +10,8 @@ import requests  # For the weather API
 app = Flask(__name__)
 
 # API Keys
-weather_api_key = "JG9QU6FJ4Q4QEVHMYDHTDDV5B"  # Visual Crossing Weather API Key
-bard_api_key = "AIzaSyD7CcYRXcznLWaP4LrK0Ghe6tIVhod4j2o"  # Bard API Key
+weather_api_key = "##############"  # Visual Crossing Weather API Key
+bard_api_key = "#############"  # Bard API Key
 
 # Secret key for flash messages
 app.secret_key = "your_secret_key"
