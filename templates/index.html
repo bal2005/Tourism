@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">Mallu</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+                <li><a href="{{ url_for('local_guide') }}">Local Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="{{ url_for('city') }}" class="btn">Explore</a>
+        </nav>
+    
+        <div class="hero-content">
+            <h2>Let's <span>Travel</span> The World</h2>
+            <a href="{{ url_for('city') }}" class="btn">
+                <button >Explore</button>
+            </a>
+            <div class="images">
+                <img src="../static/images/photo1.jpg" alt="Traveler 1">
+                <img src="../static/images/photo2.jpg" alt="Traveler 2">
+                <img src="../static/images/photo3.jpg" alt="Traveler 3">
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>Why You Should Choose Us</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="../static/images/ticket.jpg" alt="Tickets" style="width: 160px;">
+                <h3>Tickets</h3>
+                <p>Find the best deals on transport to your favorite destinations.</p>
+            </div>
+            <div class="card">
+                <img src="../static/images/accommodations.jpg" alt="Accommodations">
+                <h3>Accommodations</h3>
+                <p>Choose from a wide range of budget-friendly stays.</p>
+            </div>
+            <div class="card">
+                <img src="../static/images/tourguide.jpg" alt="Local Guide">
+                <h3>Local Guide</h3>
+                <p>Enjoy all-inclusive packages for lodging, food, and activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <img src="../static/images/footer.jpg" alt="Discover">
+        <div class="text">
+            <h2>Discover The Wonderful Experience</h2>
+            <p>Explore breathtaking destinations, embrace new cultures, and create unforgettable memories. Let us make your journey extraordinary!</p>
+            <button>Read More</button>
+        </div>
+    </section>
+</body>
+</html>

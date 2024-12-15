@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    height: 100vh;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure content stays within the header */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../static/images/tourism1.jpg') no-repeat center center/cover; /* Background image */
+    opacity: 0.5; /* Adjust the opacity (0.0 to 1.0) */
+    z-index: 1; /* Ensure it's behind content */
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.9); /* Slight white background */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+nav .btn {
+    text-decoration: none;
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Hero content */
+.hero-content {
+    margin-top: 130px; /* To avoid overlap with fixed navbar */
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    color: #f69575;
+}
+
+.hero-content h2 span {
+    color: #ff5722;
+}
+
+.hero-content .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.hero-content .images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.hero-content button {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-content button:hover {
+    background: #e64a19;
+}
+
+
+/* Benefits Section */
+.benefits {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.benefits h2 {
+    margin-bottom: 20px;
+}
+
+.benefits .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.benefits .card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.benefits .card img {
+    height: 100px;
+    width: 120px;
+}
+
+.benefits .card h3 {
+    margin-bottom: 10px;
+}
+
+.benefits .card p {
+    color: #666;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about img {
+    width: 50%;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.about .text {
+    flex: 1;
+}
+
+.about h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.about button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

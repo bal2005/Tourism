@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ zone | capitalize }}</title>
+    <link rel="stylesheet" href="../static/details.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mallu</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+                <li><a href="{{ url_for('local_guide') }}">Local Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="zone-detail">
+            <h2>{{ zone | capitalize }}</h2>
+            {% for place in zone_data %}
+                <div class="place-card">
+                    <div class="image-slider">
+                        {% for img in place.Images %}
+                            <div><img src="{{ url_for('static', filename='images/' ~ img) }}" alt="{{ place.Name }} Image"></div>
+                        {% endfor %}
+                    </div>
+                    <div class="place-details">
+                        <h3>{{ place.Name }}</h3>
+                        {% if place.get('Height') %}
+                            <p><strong>Height:</strong> {{ place.Height }}</p>
+                        {% endif %}
+                        <p><strong>Time to Visit:</strong> {{ place.Time_to_visit }}</p>
+                        <p><strong>Description: </strong>{{ place.Description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+    <script>
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+</html>

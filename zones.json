@@ -1,0 +1,224 @@
+{
+    "hills": [
+        {
+            "Name": "Manali, Himachal Pradesh",
+            "Height": "6,398 ft",
+            "Time_to_visit": "March - June",
+            "Description": "Manali, in Himachal Pradesh, is a stunning hill station nestled in the Kullu Valley, known for its snow-capped mountains, lush green valleys, and adventure activities like skiing, trekking, and paragliding. It is also famous for the Solang Valley, Rohtang Pass, and Hidimba Temple, making it a favorite destination for honeymooners and thrill-seekers.",
+            "Images": [
+                "Hills/Manali/1.jpg",
+                "Hills/Manali/2.jpg",
+                "Hills/Manali/3.jpg",
+                "Hills/Manali/4.jpg"
+            ]
+        },
+        {
+            "Name": "Kodaikanal, Tamil Nadu",
+            "Height": "7,874 ft",
+            "Time_to_visit": "March - May, September - November",
+            "Description": "Kodaikanal, often called the 'Princess of Hill Stations,' is a serene retreat in Tamil Nadu, surrounded by misty mountains and lush greenery. Known for its star-shaped Kodaikanal Lake, Coaker's Walk, and Silver Cascade Falls, it offers a tranquil escape with breathtaking views, cool weather, and vibrant flora.",
+            "Images": [
+                "Hills/Kodaikanal/1.jpg",
+                "Hills/Kodaikanal/2.jpg",
+                "Hills/Kodaikanal/3.jpg",
+                "Hills/Kodaikanal/4.jpg"
+            ]
+        },
+        {
+            "Name": "Ooty, Tamil Nadu",
+            "Height": "7,350 ft",
+            "Time_to_visit": "March - June",
+            "Description": "Ooty, the 'Queen of Hill Stations,' lies in the Nilgiri Hills and is famous for its tea plantations, botanical gardens, and the UNESCO-listed Nilgiri Mountain Railway. Major attractions include Ooty Lake, Doddabetta Peak, and the enchanting Rose Garden, making it a perfect getaway for nature enthusiasts and families.",
+            "Images": [
+                "Hills/Ooty/1.jpg",
+                "Hills/Ooty/2.jpg",
+                "Hills/Ooty/3.jpg",
+                "Hills/Ooty/4.jpg"
+            ]
+        },
+        {
+            "Name": "Coorg (Kodagu), Karnataka",
+            "Height": "3,500 ft",
+            "Time_to_visit": "October - April",
+            "Description": "Coorg, known as the 'Scotland of India,' is a picturesque hill station in Karnataka, offering lush coffee plantations, misty hills, and serene waterfalls. Popular spots include Abbey Falls, Raja's Seat, and Dubare Elephant Camp. It’s also a hub for trekking, birdwatching, and experiencing the region’s rich culture.",
+            "Images": [
+                "Hills/Coorg/1.jpg",
+                "Hills/Coorg/2.jpg",
+                "Hills/Coorg/3.jpg",
+                "Hills/Coorg/4.jpg"
+            ]
+        },
+        {
+            "Name": "Munnar, Kerala",
+            "Height": "5,200 ft",
+            "Time_to_visit": "September - March",
+            "Description": "Munnar, located in the Western Ghats of Kerala, is renowned for its rolling tea gardens, mist-covered hills, and pristine beauty. It is home to the Eravikulam National Park, Mattupetty Dam, and Anamudi Peak. The cool climate and panoramic views make it a favorite among honeymooners and nature lovers.",
+            "Images": [
+                "Hills/Munnar/1.jpg",
+                "Hills/Munnar/2.jpg",
+                "Hills/Munnar/3.jpg",
+                "Hills/Munnar/4.jpg"
+            ]
+        }
+    ],
+    "beaches": [
+        {
+            "Name": "Pondicherry",
+            "Time_to_visit": "October - March",
+            "Description": "Pondicherry offers serene beaches like Paradise Beach and Rock Beach, blending French colonial charm with a laid-back seaside vibe.",
+            "Images": [
+                "Beaches/Pondicherry/1.jpg",
+                "Beaches/Pondicherry/2.jpg",
+                "Beaches/Pondicherry/3.jpg",
+                "Beaches/Pondicherry/4.jpg"
+            ]
+        },
+        {
+            "Name": "Goa",
+            "Time_to_visit": "November - February",
+            "Description": "Goa is India's beach paradise, famous for its lively nightlife, golden sands, and water sports. Popular beaches include Baga, Calangute, and Palolem.",
+            "Images": [
+                "Beaches/Goa/1.jpg",
+                "Beaches/Goa/2.jpg",
+                "Beaches/Goa/3.jpg",
+                "Beaches/Goa/4.jpg"
+            ]
+        },
+        {
+            "Name": "Marina Beach, Tamil Nadu",
+            "Time_to_visit": "November - February",
+            "Description": "Located in Chennai, Marina Beach is one of the longest urban beaches in the world, offering stunning sunrises and a lively atmosphere.",
+            "Images": [
+                "Beaches/Marina/1.jpg",
+                "Beaches/Marina/2.jpg",
+                "Beaches/Marina/3.jpg",
+                "Beaches/Marina/4.jpg"
+            ]
+        },
+        {
+            "Name": "Lakshadweep",
+            "Time_to_visit": "October - May",
+            "Description": "Lakshadweep's pristine islands boast crystal-clear waters, coral reefs, and serene beaches, making it a tropical paradise for water lovers.",
+            "Images": [
+                "Beaches/Lakshadweep/1.jpg",
+                "Beaches/Lakshadweep/2.jpg",
+                "Beaches/Lakshadweep/3.jpg",
+                "Beaches/Lakshadweep/4.jpg"
+            ]
+        },
+        {
+            "Name": "Kovalam, Kerala",
+            "Time_to_visit": "September - March",
+            "Description": "Kovalam is renowned for its crescent-shaped beaches, lighthouse views, and calm waters perfect for swimming and relaxation.",
+            "Images": [
+                "Beaches/Kovalam/1.jpg",
+                "Beaches/Kovalam/2.jpg",
+                "Beaches/Kovalam/3.jpg",
+                "Beaches/Kovalam/4.jpg"
+            ]
+        }
+    ],
+    "temples": [
+        {
+            "Name": "Brihadeeswara Temple, Tamil Nadu",
+            "Time_to_visit": "October - March",
+            "Description": "A UNESCO World Heritage Site, this ancient Chola temple is an architectural marvel dedicated to Lord Shiva.",
+            "Images": [
+                "Temples/Brihadeeswara/1.jpg",
+                "Temples/Brihadeeswara/2.jpg",
+                "Temples/Brihadeeswara/3.jpg",
+                "Temples/Brihadeeswara/4.jpg"
+            ]
+        },
+        {
+            "Name": "Sun Temple, Odisha",
+            "Time_to_visit": "October - February",
+            "Description": "The Sun Temple at Konark is a UNESCO World Heritage Site, famed for its intricate carvings and chariot-like structure dedicated to the Sun God.",
+            "Images": [
+                "Temples/SunTemple/1.jpg",
+                "Temples/SunTemple/2.jpg",
+                "Temples/SunTemple/3.jpg",
+                "Temples/SunTemple/4.jpg"
+            ]
+        },
+        {
+            "Name": "Madurai Meenakshi Amman Temple, Tamil Nadu",
+            "Time_to_visit": "October - March",
+            "Description": "This iconic Dravidian-style temple is known for its vibrant sculptures and is dedicated to Goddess Meenakshi and Lord Sundareswarar.",
+            "Images": [
+                "Temples/Meenakshi/1.jpg",
+                "Temples/Meenakshi/2.jpg",
+                "Temples/Meenakshi/3.jpg",
+                "Temples/Meenakshi/4.jpg"
+            ]
+        },
+        {
+            "Name": "Golden Temple, Punjab",
+            "Time_to_visit": "November - March",
+            "Description": "The Golden Temple in Amritsar is a spiritual haven, renowned for its stunning gold-plated architecture and the serene Amrit Sarovar.",
+            "Images": [
+                "Temples/GoldenTemple/1.jpg",
+                "Temples/GoldenTemple/2.jpg",
+                "Temples/GoldenTemple/3.jpg",
+                "Temples/GoldenTemple/4.jpg"
+            ]
+        }
+    ],
+    "culture": [
+        {
+            "Name": "Taj Mahal, Uttar Pradesh",
+            "Time_to_visit": "October - February",
+            "Description": "A UNESCO World Heritage Site, the Taj Mahal is an iconic symbol of love and one of the Seven Wonders of the World.",
+            "Images": [
+                "Culture/TajMahal/1.jpg",
+                "Culture/TajMahal/2.jpg",
+                "Culture/TajMahal/3.jpg",
+                "Culture/TajMahal/4.jpg"
+            ]
+        },
+        {
+            "Name": "Gateway of India, Maharashtra",
+            "Time_to_visit": "October - March",
+            "Description": "Located in Mumbai, the Gateway of India is a historic monument overlooking the Arabian Sea, representing India's colonial past.",
+            "Images": [
+                "Culture/GatewayOfIndia/1.jpg",
+                "Culture/GatewayOfIndia/2.jpg",
+                "Culture/GatewayOfIndia/3.jpg",
+                "Culture/GatewayOfIndia/4.jpg"
+            ]
+        },
+        {
+            "Name": "Ajanta and Ellora Caves, Maharashtra",
+            "Time_to_visit": "October - March",
+            "Description": "These UNESCO World Heritage Sites are famous for their ancient Buddhist rock-cut caves, intricate carvings, and stunning frescoes.",
+            "Images": [
+                "Culture/AjantaEllora/1.jpg",
+                "Culture/AjantaEllora/2.jpg",
+                "Culture/AjantaEllora/3.jpg",
+                "Culture/AjantaEllora/4.jpg"
+            ]
+        },
+        {
+            "Name": "Mahabalipuram, Tamil Nadu",
+            "Time_to_visit": "November - February",
+            "Description": "A UNESCO World Heritage Site, Mahabalipuram is known for its rock-cut temples, including the Shore Temple, showcasing Pallava architecture.",
+            "Images": [
+                "Culture/Mahabalipuram/1.jpg",
+                "Culture/Mahabalipuram/2.jpg",
+                "Culture/Mahabalipuram/3.jpg",
+                "Culture/Mahabalipuram/4.jpg"
+            ]
+        },
+        {
+            "Name": "Auroville, Tamil Nadu",
+            "Time_to_visit": "November - March",
+            "Description": "Auroville is an experimental township promoting unity and peace, featuring the iconic Matrimandir and tranquil surroundings.",
+            "Images": [
+                "Culture/Auroville/1.jpg",
+                "Culture/Auroville/2.jpg",
+                "Culture/Auroville/3.jpg",
+                "Culture/Auroville/4.jpg"
+            ]
+        }
+    ]
+}

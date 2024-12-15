@@ -1,0 +1,240 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling - reuse the same style from other pages */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Slight white background */
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+}
+
+.flash-messages {
+    color: green;
+}
+
+/* Local guide section */
+.local-guide {
+    padding: 100px 20px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.local-guide h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #ff5722;
+}
+
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.local-guide .guide {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.local-guide .guide.expanded {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.local-guide .guide .city-details {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.local-guide .guide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.local-guide .guide h3 {
+    margin: 15px 0 10px;
+}
+
+.local-guide .guide p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.local-guide .guide a {
+    text-decoration: none;
+    color: #ff5722;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.local-guide .guide a:hover {
+    color: #e64a19;
+}
+
+.local-guide .guide .edit-button {
+    background: #ff5722;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.local-guide .guide .edit-button:hover {
+    background: #e64a19;
+}
+
+.local-guide .guide .edit-form {
+    display: none;
+    margin-top: 10px;
+}
+
+.local-guide .guide .edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.local-guide .guide .edit-form button {
+    background: #ff5722;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.local-guide .guide .edit-form button:hover {
+    background: #e64a19;
+}
+
+/* Add Guide Button */
+.add-guide-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#add-guide-btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-guide-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Add Guide Form */
+.add-guide-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.add-guide-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.add-guide-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.add-guide-form input,
+.add-guide-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-guide-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-guide-form button:hover {
+    background-color: #e64a19;
+}

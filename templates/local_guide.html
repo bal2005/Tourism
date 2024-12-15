@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='local_guide.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mallu</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+                <li><a href="{{ url_for('local_guide') }}">Local Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="local-guide">
+            <h2>Discover Our Local Guides</h2>
+
+            <!-- Flash Messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="flash-messages">
+                        {% for category, message in messages %}
+                            <div class="flash flash-{{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <!-- Display Existing Guides -->
+            <div class="guides-grid">
+                {% for guide in guides %}
+                <div class="guide" onclick="toggleDetails(this)">
+                    <img src="{{ guide.photo }}" alt="Guide Photo">
+                    <h3>{{ guide.name }}</h3>
+                    <p>Age: {{ guide.age }}</p>
+                    <p>Gender: {{ guide.gender }}</p>
+                    <p>Experience: {{ guide.years_experience }} years</p>
+                    <p>City: {{ guide.city }}</p>
+                    <div class="city-details">
+                        <p><strong>City Condition:</strong> {{ guide.city_condition }}</p>
+                        <button class="edit-button" onclick="editCityCondition(event, this)">Edit</button>
+                        <form class="edit-form" method="POST" action="{{ url_for('update_city_condition', guide_id=guide.id) }}">
+                            <textarea name="city_condition" rows="3">{{ guide.city_condition }}</textarea>
+                            <button type="submit">Update</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Button to Add New Guide -->
+            <div class="add-guide-container">
+                <button id="add-guide-btn">Add New Guide</button>
+            </div>
+
+            <!-- Form to Add a Local Guide -->
+            <div class="add-guide-form" id="add-guide-form" style="display: none;">
+                <h3>Add a Local Guide</h3>
+                <form action="{{ url_for('local_guide') }}" method="POST" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter age" min="18" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="photo">Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                    <label for="years_experience">Years of Experience:</label>
+                    <input type="number" id="years_experience" name="years_experience" placeholder="Enter years of experience" min="0" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter city" required>
+
+                    <label for="city_condition">City Condition:</label>
+                    <textarea id="city_condition" name="city_condition" rows="3" placeholder="Describe the city's condition" required></textarea>
+
+                    <button type="submit">Add Guide</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Toggle visibility of city details
+        function toggleDetails(card) {
+            const details = card.querySelector('.city-details');
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+            card.classList.toggle('expanded');
+        }
+
+        // Toggle Add Guide form visibility
+        document.getElementById('add-guide-btn').addEventListener('click', function() {
+            const form = document.getElementById('add-guide-form');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Show edit form for city condition
+        function editCityCondition(event, button) {
+            event.stopPropagation();
+            const form = button.nextElementSibling;
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

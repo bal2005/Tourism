@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="../static/destinations.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mallu</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+                <li><a href="{{ url_for('local_guide') }}">Local Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="destinations">
+            <h2>Explore Different Zones</h2>
+            <div class="zones">
+                <a href="{{ url_for('details', zone='hills') }}" class="zone">
+                    <img src="{{ url_for('static', filename='images/hills.jpg') }}" alt="Hills">
+                    <h3>Hills</h3>
+                    <p>Discover the serene beauty of mountainous regions.</p>
+                </a>
+                <a href="{{ url_for('details', zone='beaches') }}" class="zone">
+                    <img src="{{ url_for('static', filename='images/beach.jpg') }}" alt="Beach">
+                    <h3>Beach</h3>
+                    <p>Relax at beautiful coastal destinations.</p>
+                </a>
+                <a href="{{ url_for('details', zone='temples') }}" class="zone">
+                    <img src="{{ url_for('static', filename='images/temple.jpg') }}" alt="Temples">
+                    <h3>Temples</h3>
+                    <p>Explore historical and cultural temples.</p>
+                </a>
+                <a href="{{ url_for('details', zone='culture') }}" class="zone">
+                    <img src="{{ url_for('static', filename='images/culture.jpg') }}" alt="Culture">
+                    <h3>Culture</h3>
+                    <p>Immerse yourself in rich cultural experiences.</p>
+                </a>
+                <!-- Add more zones as needed -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

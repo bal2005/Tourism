@@ -1,0 +1,108 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling - reuse the same style from other pages */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Slight white background */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Destinations section */
+.destinations {
+    padding: 100px 20px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.destinations h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #ff5722;
+}
+
+.zones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.zone {
+    display: block;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.zone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.zone img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.zone h3 {
+    margin: 15px 0 10px;
+}
+
+.zone p {
+    color: #666;
+    margin-bottom: 15px;
+}

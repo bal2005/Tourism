@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Arvind",
+        "age": "20",
+        "gender": "Male",
+        "years_experience": "2",
+        "city": "Chennai",
+        "photo": "static/images/arvind.jpg"
+    },
+    {
+        "name": "Bala",
+        "age": "19",
+        "gender": "Male",
+        "years_experience": "4",
+        "city": "Chennai",
+        "photo": "static/images/bala.jpg"
+    },
+    {
+        "name": "AP",
+        "age": "19",
+        "gender": "Male",
+        "years_experience": "5",
+        "city": "Trichy",
+        "photo": "static/images/ap.jpg"
+    },
+    {
+        "name": "Arun",
+        "age": "20",
+        "gender": "Male",
+        "years_experience": "6",
+        "city": "Karur",
+        "photo": "static/images/arun.jpg"
+    },
+    {
+        "name": "Gabi",
+        "age": "19",
+        "gender": "Male",
+        "years_experience": "5",
+        "city": "Chennai",
+        "photo": "static/uploads\\gabi.jpg"
+    }
+]

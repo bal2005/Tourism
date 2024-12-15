@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='city.css') }}">
+    <title>City Trip Planner</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Mallu</div>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="{{ url_for('destinations') }}">Destinations</a></li>
+            <li><a href="{{ url_for('local_guide') }}">Local Guide</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1 class="main-heading">City Trip Planner</h1>
+
+<!-- Form for User Input -->
+<form action="/city" method="POST">
+    <label for="source">Source:</label>
+    <input type="text" id="source" name="source" placeholder="Enter your city" required><br>
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" name="destination" placeholder="Enter destination city" required><br>
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date" required><br>
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date" required><br>
+    <button type="submit">Generate Itinerary</button>
+</form>
+
+<!-- Display Itinerary -->
+{% if itinerary %}
+<div class="itinerary-section">
+    <h2>Generated Itinerary</h2>
+    <div class="itinerary-details">
+        <p><strong>Source:</strong> {{ source }}</p>
+        <p><strong>Destination:</strong> {{ destination }}</p>
+        <p><strong>Start Date:</strong> {{ start_date }}</p>
+        <p><strong>End Date:</strong> {{ end_date }}</p>
+    </div>
+    <div class="itinerary-content">
+        <h3>Your Detailed Itinerary:</h3>
+        {{ itinerary | safe }}
+    </div>
+</div>
+{% endif %}
+
+<!-- Display Weather Data -->
+{% if weather_data %}
+<div class="weather-section">
+    <h2>Weather Forecast for {{ destination }}</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Condition</th>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+        </tr>
+        {% for day in weather_data['days'] %}
+        <tr>
+            <td>{{ day['datetime'] }}</td>
+            <td>{{ day['conditions'] }}</td>
+            <td>{{ day['temp'] }}°C</td>
+            <td>{{ day['humidity'] }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+<!-- Flash Messages -->
+<div class="flash-messages">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul>
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+</div>
+
+</body>
+</html>
