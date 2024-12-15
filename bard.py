@@ -1,7 +1,7 @@
 import google.generativeai as palm
 
 # Directly specify the API key
-palm_api_key = "AIzaSyD7CcYRXcznLWaP4LrK0Ghe6tIVhod4j2o"  # Replace with your actual API key
+palm_api_key = "#############"  # Replace with your actual API key
 
 # Create a config
 palm.configure(api_key=palm_api_key)
